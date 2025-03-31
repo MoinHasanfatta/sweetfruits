@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
+app.use(cors())
 
 const fruits = [
   { id: 1, name: 'Apple', color: 'Red', taste: 'Sweet' },
